@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPassingData.DisplayPage"
+             Title="DisplayPage">
+    <VerticalStackLayout>
+        <Label
+            Text="Arnetta Jones"
+            HorizontalOptions="Center"
+            Style="{StaticResource Headline}"/>
+        <Label
+            x:Name="Numbers"
+            FontSize="24"
+            HorizontalOptions="Center" />
+        <Label
+            x:Name="ResultInput"
+            FontSize="24"
+            HorizontalOptions="Center" />
+        <Button
+            Text="Go Back"
+            Clicked="OnGoBackClicked"
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

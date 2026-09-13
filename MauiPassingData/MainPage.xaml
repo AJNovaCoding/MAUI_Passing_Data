@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPassingData.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Arnetta Jones, Add and Subtract"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="Center"/>
+            <Label
+                Text="First Value"/>
+            <Entry
+                x:Name="FirstValue"
+                Placeholder="Enter First Value"
+                Keyboard="Numeric"
+                HorizontalOptions="Fill"/>
+            <Label
+                Text="Second Value"/>
+            <Entry
+                x:Name="SecondValue"
+                Placeholder="Enter Second Value"
+                Keyboard="Numeric"
+                HorizontalOptions="Fill"/>
+
+            <HorizontalStackLayout>
+                <Button
+                x:Name="AddBtn"
+                Text="Addition" 
+                Clicked="OnAddClicked"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="SubtractBtn"
+                Text="Subtraction" 
+                Clicked="OnSubtractClicked"
+                HorizontalOptions="Fill" />
+            </HorizontalStackLayout>
+            <Label
+                x:Name="ResultInput"
+                Text=""
+                FontSize="24"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
